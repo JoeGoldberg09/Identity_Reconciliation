@@ -17,7 +17,7 @@ app.get("/health", (req: Request, res: Response) => {
 const pingServer = async (): Promise<void> => {
   try {
     const response: AxiosResponse = await axios.get(
-      "https://identity-reconciliation-w2rr.onrender.com/health"
+      "https://identity-reconciliation-ta37.onrender.com/health"
     );
     if (response.status === 200) {
       console.log("Server pinged successfully");
